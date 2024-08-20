@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 1rem;
+    position: relative;
+    font-family: "Outfit", sans-serif;
+}
+
+section#modal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.465);
+    width: 100vw;
+    height: 100vh;
+    visibility: hidden;
+}
+
+section#modal.active-modal{
+    visibility: visible;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 28px 32px;
+    background-image: linear-gradient(to right, #444, #888);
+}
+
+header div h1{
+    color: #e5e5e5;
+}
+
+header nav#mobileMenu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #444;
+    width: 0;
+    height: 100vh;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    transition-duration: 150ms;
+    z-index: 1;
+}
+header nav#mobileMenu.active{
+    visibility: visible;
+    width: 60vw;
+}
+
+header nav#mobileMenu div#mobileMenuControls{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100px;
+    color: transparent;
+    font-size: 28px;
+    margin-right: 10px;
+    font-weight: 900;
+    transition-duration: 100ms;
+}
+
+header nav#mobileMenu.active div#mobileMenuControls{
+    color: #e5e5e5;
+    cursor: pointer;
+}
+
+header nav#mobileMenu ul{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-right: 40px;
+    font-size: 1.9em;
+}
+
+header nav#mobileMenu ul li a{
+    color: transparent;
+    white-space: nowrap;
+    transition-duration: 100ms;
+}
+
+header nav#mobileMenu.active ul li a{
+    color: #e5e5e5;
+}
+
+header nav button#menu{
+    display: none;
+    background-color: transparent;
+    border: none;
+    width: 24px;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4px;
+    cursor: pointer;
+    transition-duration: 175ms;
+}
+
+header nav button#menu:hover{
+    transform: scale(1.1);
+}
+
+header nav button#menu p{
+    border-radius: 2px;
+    width: 100%;
+    height: 4px;
+    background-color: #e5e5e5;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    gap: 1.15em;
+}
+
+header nav ul li, header nav ul li a{
+    color: #e5e5e5;
+    font-weight: 800;
+    border-bottom: 3px solid transparent;
+    text-decoration: none;
+}
+
+header nav ul li:hover{
+    border-bottom-color:#e5e5e5;
+    transform: scale(1.12);
+}
+
+main{
+    padding: 20px 40px;
+    background-color: #eee;
+}
+
+section#main-section{
+    font-family: "Kanit", sans-serif;
+    background-image: url('/assets/background-0.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin: auto;
+    margin-bottom: 20px;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    gap: 30%;
+    align-items: center;
+    padding: 0 110px;
+    min-height: calc(100vh - 40px - 100px);
+    border-radius: 70px 30px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.172);
+}
+
+section#main-section div#title{
+    text-indent: 8px;
+    font-size: 4em;
+    text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.172);
+}
+
+section#main-section div#title hr{
+    border-color: #FFF;
+}
+
+section#main-section div#icon img{
+    width: 270px;
+}
+
+section#main-section a#contact-button{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 1.7em;
+    text-decoration: none;
+    color: #FFF;
+    background-image: linear-gradient(to right, #666,  #888);
+    padding: 8px;
+    border-radius: 12px 5px;
+    border: 3px solid transparent;
+    transition-duration: 200ms;
+}
+
+section#main-section a#contact-button:hover{
+    border: 3px solid #444;
+}
+
+section#about-me{
+    background-image: url('/assets/background-1.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 70px 30px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.172);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    font-weight: 700;
+    font-size: 1.04em;
+    padding: 20px 60px;
+    margin-bottom: 20px;
+    height: calc(100vh - 40px);
+}
+
+section#about-me div#content{
+    background-color: #FFF;
+    line-height: 1.6;
+    border-radius: 30px 60px;
+    padding: 20px 40px;
+    width: 52%;
+}
+
+section#about-me div#profile-picture img{
+    width: 25vw;
+    height: 25vw;
+    border-radius: 35% 50%;
+    border: 3px solid #FFF;
+}
+
+section#technologies{
+    background-image: linear-gradient(150deg, #444, #AAA);
+    border-radius: 70px 30px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.172);
+    color: black;
+    font-weight: 700;
+    font-size: 1.04em;
+    display: grid;
+    place-items: center;
+    padding: 50px;
+    height: calc(100vh - 40px);
+}
+
+section#technologies div#background{
+    background-color: #FCFCFC;
+    width: 100%;
+    height: 100%;
+    border-radius: 70px 30px;
+    border: 2px solid #333;
+    display: grid;
+    place-items: center;
+}
+
+section#technologies div#background div#container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7vw;
+    margin: auto;
+    justify-content: center;
+}
+
+section#technologies div#background div#container div.tech-card{
+    border-radius: 15px;
+    position: relative;
+    max-width: 110px;
+    width: 13vw;
+    max-height: 110px;
+    height: 13vw;
+    text-align: center;
+    padding: 4px 2px;
+    border: 2px solid #444;
+}
+
+section#technologies div#background div#container div.tech-card h4{
+    font-size: 1em;
+    font-weight: 500
+}
+
+section#technologies div#background div#container div.tech-card img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+    width: 40%;
+}
+
+@media screen and (max-width: 900px){
+    body{
+        font-size: 0.8rem;
+    }
+
+    main{
+        padding: 20px 20px;
+    }
+
+    section#main-section{
+        padding: 0 90px;
+    }
+
+    section#main-section div#icon img{
+        width: 200px;
+    }
+
+    section#about-me div#profile-picture img{
+        width: 275px;
+        height: 275px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    body{
+        font-size: 0.7rem;
+    }
+
+    header nav#mobileMenu ul{
+        font-size: 2em;
+    }
+    
+    header nav#desktopMenu ul{
+        display: none;
+    }
+
+    header nav button#menu{
+        display: flex;
+    }
+
+    section#main-section{
+        flex-direction: column;
+        justify-content: start;
+        gap: 35px;
+        text-align: center;
+        padding: 150px 20px;
+    }
+
+    section#main-section div#title p{
+        text-indent: 0px;
+    }
+
+    section#main-section div#icon img{
+        width: 150px;
+    }
+
+    section#about-me{
+        font-size: 1.2em;
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 10%;
+        padding: 0 10px;
+    }
+
+    section#about-me div#content{
+        padding: 20px 30px;
+        width: 95%;
+    }
+
+    section#technologies div#background div#container{
+        height: 80%;
+    }
+
+    section#about-me div#profile-picture img{
+        width: 200px;
+        height: 200px;
+    }
+
+    section#technologies div#background div#container div.tech-card h4{
+        font-size: 1.8vw;
+    }
+}
+
+@media screen and (max-width: 375px){
+    body{
+        font-size: 0.55rem;
+    }
+
+    header nav#mobileMenu ul{
+        margin-right: 36px;
+    }
+
+    header, header nav#mobileMenu div{
+        height: 65px;
+    }
+
+    header nav button#menu p{
+        height: 3px;
+        width: 80%;
+    }
+
+    section#main-section{
+        min-height: calc(100vh - 40px - 65px);
+    }
+
+    section#technologies div#background div#container div.tech-card h4{
+        display: none;
+    }
+
+    section#technologies div#background div#container div.tech-card img{
+        width: 60%;
+        transform: translate(-50%, -50%);
+    }
+}
