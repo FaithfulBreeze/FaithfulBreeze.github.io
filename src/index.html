@@ -7,7 +7,7 @@
     <script src="js/index.js" defer></script>
     <title>Luis Victor</title>
 </head>
-<body>
+<body onload="loadIframes()">
     <section id="modal"></section>
     <header>
         <div>
@@ -22,7 +22,7 @@
             <ul>
                 <li><a href="#about-me" onclick="setMenu()">About me</a></li>
                 <li><a href="#technologies" onclick="setMenu()">Technologies</a></li>
-                <li><a href="#" onclick="setMenu()">Projects</a></li>
+                <li><a href="#projects" onclick="setMenu()">Projects</a></li>
                 <li><a href="#" onclick="setMenu()">Contact</a></li>
             </ul>
         </nav>
@@ -30,7 +30,7 @@
             <ul>
                 <li><a href="#about-me">About me</a></li>
                 <li><a href="#technologies">Technologies</a></li>
-                <li><a href="#">Projects</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
             <button id="menu" onclick="setMenu()">
@@ -137,7 +137,18 @@
                 </div>
             </div>
         </section>
+        <section id="projects">
+            <div id="slider" onload="loadIframes()">
+            </div>
+            <div id="controls">
+                <button id="left" onclick="prevImg()">
+                    &#10092;
+                </button>
+                <button id="right" onclick="nextImg()">
+                    &#10093;
+                </button>
+            </div>
+        </section>
     </main>
-    <iframe src="https://ec2-18-231-82-171.sa-east-1.compute.amazonaws.com/" frameborder="0"></iframe>
 </body>
 </html>
