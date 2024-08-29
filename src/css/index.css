@@ -502,8 +502,8 @@ section#contact div#list a img{
     }
 
     section#technologies div#background div#container img.tech-card{
-        width: 90%;
-        height: 90%;
+        width: 70px;
+        height: 70px;
     }
 
 
@@ -518,6 +518,10 @@ section#contact div#list a img{
 
     section#projects div#controls{
         width: 110%;
+    }
+
+    section#contact{
+        padding: 20px;
     }
 
     section#contact div#mail-icon, section#contact div#mail-icon img{
@@ -539,6 +543,11 @@ section#contact div#list a img{
 
     section#contact div#list a img{
         width: 50px;
+    }
+
+    section#technologies div#background div#container img.tech-card{
+        width: 60px;
+        height: 60px;
     }
 }
 
