@@ -21,7 +21,7 @@ async function loadIframes(){
         iframe.src = frame.src
         slider.appendChild(iframe)
     }
-    title[1].innerText = iframes[0].title
+    title[1].innerHTML = `<a href="${iframes[0].src}">${iframes[0].title}</a>`
     sliderFirstImage = slider.children[0]
     maximumIndex = slider.children.length - 1
     currentImage = 0
@@ -31,7 +31,7 @@ function prevImg(){
     if(currentImage < 0){
         currentImage += 100
         sliderFirstImage.style.marginLeft = `${currentImage}%`
-        title[1].innerText = iframes[-currentImage/100].title
+        title[1].innerHTML = `<a href="${iframes[-currentImage/100].src}">${iframes[-currentImage/100].title}</a>`
         repo.href = iframes[-currentImage/100].repo
     }
 }
@@ -40,7 +40,7 @@ function nextImg(){
     if((-currentImage/100) < maximumIndex){
         currentImage -= 100
         sliderFirstImage.style.marginLeft = `${currentImage}%`
-        title[1].innerText = iframes[-currentImage/100].title
+        title[1].innerHTML = `<a href="${iframes[-currentImage/100].src}">${iframes[-currentImage/100].title}</a>`
         repo.href = iframes[-currentImage/100].repo
     }
 }
