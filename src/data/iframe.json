@@ -1,8 +1,12 @@
 [
     {
-        "src": "http://ec2-18-231-44-111.sa-east-1.compute.amazonaws.com:5050/"
+        "title": "My First CRUD", 
+        "src": "http://ec2-18-231-44-111.sa-east-1.compute.amazonaws.com:5050/",
+        "repo": "https://github.com/FaithfulBreeze/my-first-crud"
     },
     {
-        "src": "http://ec2-18-231-44-111.sa-east-1.compute.amazonaws.com:4040/"
+        "title": "Posts App",
+        "src": "http://ec2-18-231-44-111.sa-east-1.compute.amazonaws.com:4040/",
+        "repo": "https://github.com/FaithfulBreeze/posts-app"
     }
 ]
