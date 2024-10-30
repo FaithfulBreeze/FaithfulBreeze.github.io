@@ -28,7 +28,7 @@ async function loadCards(){
         repositoryLink.innerHTML = "--- Github Repository ---"
         projectLink.href = project.src
         projectLink.target = "_blank"
-        projectLink.innerHTML = "--- Project Deploy ---"
+        projectLink.innerHTML = project.src == false ? "--- Not deployed yet ---" : "--- Project Deploy ---"
         
         cardContainer.appendChild(cardTitle)
         cardContainer.appendChild(cardImage)
