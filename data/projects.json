@@ -1,37 +1,37 @@
 [
-    {
-        "title": "My First CRUD", 
-        "src": "http://ec2-18-230-209-137.sa-east-1.compute.amazonaws.com:5050/",
-        "img" : "../assets/my-first-crud.png",
-        "repo": "https://github.com/FaithfulBreeze/my-first-crud/tree/prod",
-        "details": "My First CRUD - My first backend project, the main porpouse of this project was learn how does nodejs deals with http requests under the hood. No framework was used here, database is a json file."
-    },
-    {
-        "title": "Posts App",
-        "src": "http://ec2-18-230-209-137.sa-east-1.compute.amazonaws.com:4040/",
-        "img" : "../assets/posts-app.png",
-        "repo": "https://github.com/FaithfulBreeze/posts-app/tree/prod",
-        "details": " Posts App - In this project i decided to learn about express and postgres to build an auth based application, so i built an posts app where people can share posts."
-    },
-    {
-        "title": "Stock Manager",
-        "src": "http://ec2-18-230-209-137.sa-east-1.compute.amazonaws.com:3030/",
-        "img" : "../assets/stock-manager.png",
-        "repo": "https://github.com/FaithfulBreeze/stock-manager/tree/prod",
-        "details": "Stock Manager - The main porpouse of this project was learn about mongodb & mongoose, so i built a simple application to manipulate stock."
-    },
-    {
-        "title": "Tic Tac Toe JS",
-        "src": "http://ec2-18-230-209-137.sa-east-1.compute.amazonaws.com:6060/",
-        "img" : "../assets/tic-tac-toe-js.png",
-        "repo": "https://github.com/FaithfulBreeze/tic-tac-toe-js/tree/refactor",
-        "details": "Tic Tac Toe JS - Decided to understand how i could build an application where data flows bidirectionally, i have put some work on learning about socket.io to build a multiplayer tic tac toe game."
-    },
-    {
-        "title": "To Do Manager", 
-        "src": "",
-        "img" : "../assets/to-do-manager.png",
-        "repo": "https://github.com/FaithfulBreeze/jackexperts-project",
-        "details": "To Do Manager - In this project i divided frontend and backend in different applications, frontend was built with react and served with nginx, while backend was built with express and sequelize."
-    }
+  {
+    "title": "My First CRUD",
+    "src": "",
+    "img": "../assets/my-first-crud.png",
+    "repo": "https://github.com/FaithfulBreeze/my-first-crud/tree/prod",
+    "details": "My First CRUD - My first backend project, the main porpouse of this project was learn how does nodejs deals with http requests under the hood. No framework was used here, database is a json file."
+  },
+  {
+    "title": "Posts App",
+    "src": "",
+    "img": "../assets/posts-app.png",
+    "repo": "https://github.com/FaithfulBreeze/posts-app/tree/prod",
+    "details": " Posts App - In this project i decided to learn about express and postgres to build an auth based application, so i built an posts app where people can share posts."
+  },
+  {
+    "title": "Stock Manager",
+    "src": "",
+    "img": "../assets/stock-manager.png",
+    "repo": "https://github.com/FaithfulBreeze/stock-manager/tree/prod",
+    "details": "Stock Manager - The main porpouse of this project was learn about mongodb & mongoose, so i built a simple application to manipulate stock."
+  },
+  {
+    "title": "Tic Tac Toe JS",
+    "src": "",
+    "img": "../assets/tic-tac-toe-js.png",
+    "repo": "https://github.com/FaithfulBreeze/tic-tac-toe-js/tree/refactor",
+    "details": "Tic Tac Toe JS - Decided to understand how i could build an application where data flows bidirectionally, i have put some work on learning about socket.io to build a multiplayer tic tac toe game."
+  },
+  {
+    "title": "To Do Manager",
+    "src": "",
+    "img": "../assets/to-do-manager.png",
+    "repo": "https://github.com/FaithfulBreeze/jackexperts-project",
+    "details": "To Do Manager - In this project i divided frontend and backend in different applications, frontend was built with react and served with nginx, while backend was built with express and sequelize."
+  }
 ]
